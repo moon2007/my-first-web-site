@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+===============================================================================<br>
+<h1><a herf="index.html">WEB</a></h1>
+<ul>
+  <li><a href="1.html" title="HTML">1. HTML</a></li>
+  <li><a href="2.html" title="CSS">2. CSS</a></li>
+  <li><a href="3.html" title="Java Script">3. Java Script</a></li>
+</ul>
+<br><br><br>
+<a href="index.html" title="index">index</a>
+<br>
+<a href="note.html" title="note">note</a>
+<br>===========================================================================<br><br>
+<head>
+  <h2>html강의</h2>
+  <meta charset="utf-8">
+</head>
+  <body>
+  1일차 <br>
+  #1~#5<br><br>
+  setup<br><br>
+  #6
+  <br><strong>
+    <xmp>
+  <> : 열리는 태그
+  </> : 닫히는 태그
+</xmp>
+  </strong>
+
+  글씨 <strong>굵게</strong> 표시하기
+  <xmp>
+    <strong> 원하는 문장 </strong>
+  </xmp>
+  글씨 <u>밑줄</u> 치기
+  <xmp>
+    <u> 원하는 문장 </u>
+  </xmp>
+  <br><br>
+  2일차<br>
+  #7
+  <h1>Heading level 1</h1>
+  <h2>Heading level 2</h2>
+  <h3>Heading level 3</h3>
+  <h4>Heading level 4</h4>
+  <h5>Heading level 5</h5>
+  <h6>Heading level 6</h6>
+  <xmp>
+    <h(1~6)> : Heading : 제목 태그
+    <h(1~6)> 원하는 문장 </h(1~6)>
+    *<h(1~6)> 에는 줄바꿈 포함
+  </xmp>
+  #8 통계<br>
+  가장 많이 쓰이는 태그들<br>
+  <xmp>
+  <head> </head>
+  <body> </body>
+  <html> </html>
+  <title> </title>
+  ...
+  <h1> </h1>
+  <strong> </strong>
+  </xmp>
+  #9 줄바꿈 br vs p<br>
+  p tag는 단락 나누기  기능 br은 단순 줄바꿈<br>
+  *br 과 p 는 닫히는 태그가 없다<br>
+  <p>p : 줄바꿈 </p>
+  br : 줄바꿈<br>
+
+  부가적 CSS문법 위에서 줄바꾸기(미세조정 가능)
+  <p><p style="margin-top:45px" >
+  <xmp>
+  </p> ~~ <p style="margin-top: X px" >
+    </xmp>
+  #10 HTML & Internet<br>
+  제목 태그 <xmp><h></h></xmp>의 중요성<br>
+  1.일반적인 글보다 검색엔진에 위로 올라오게 된다<br>
+  2.접근성, 웹은 모든 운영체제에서 동작,웹페이지의 소스는 누구나 볼 수 있다,은 저작권이 없는 순수한 공공재
+
+  3일차<p><p>
+  #11 이미지 넣기<br>
+  <img src="coding.jpg" width="100%">
+  <xmp>
+  <img scr="사진의 주소" width="사진의 크기 (100%로 하면 화면 크기에 딱 맞게 넣을 수 있음)"
+  여기서 scr, width 같은 것들은 '속성' 이라고 한다. width는 필수 아님
+    </xmp>
+  #12 부모 태그, 자식 태그, 목<br><br>
+  <ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ol>
+  <xmp>
+  <li> ~~ </li> 를 사용하면 리스트 형식으로 출력된다
+  <li>태그의 부모태그인 <ul>,<ol>이라는 태그를 사용하면 어디서부터 어디까지
+  연관되어 있는지를 구분할 수 있다
+
+  <ul>은 태그 안에 있는 list목록이 끝나면 줄바꿈을 한다
+  <ol>을 사용하면 숫자를 쓰지 않아도 목록에 숫자를 쓸 수 있다
+
+    ol은 Ordered List의 약자이고
+    ul은 Unordered List의 약자이다
+    </xmp>
+    #13 문서구조와 슈퍼스타들<br><br>
+  제목 만들기
+  <title>WEB1 - html이란 무엇인가?</title>
+  <xmp>
+  <title>제목</title> 을 사용하면 웹의 제목을 바꿀 수 있다
+    </xmp>
+  *이 파일은 utf-8이라는 형식으로 작성되었기 때문에 h1~6 태그를 사용하면
+  한글을 쓰면 깨지게 된다 그렇기 때문에 utf-8의 형식으로 열라고 해야 한다
+  <xmp>
+    그럴 땐  <meta charset="utf-8"> 를 사용하면 된다
+    </xmp>
+    ==제목은 head라는 태그로, 본문은 body라는 태그로 묶기로 약속==<br>
+    ==그리고 head와 body의 위에 html태그를 사용한다 그 위에는 관용적으로 !DOCTYPE html태그를 사용한다==
+    #14 HTML 태그의 제왕<br><br>
+    HyperText인 a 태그는 닻을 의미하는 anchor의 약자이다<br>
+    a의 기능은 '링크'이다
+    <p><a href="https://www.w3.org/TR/2011/WD-html5-20110405/"
+      target="_blank" title="이 부분이 툴팁이다. 원하는 내용을 쓸 수 있다">HyperText Markup Language</a></p>
+    herf 는 속성이다
+    <xmp>
+  <p><a href="링크">링크를 걸 내용</a></p>을 사용하면 링크를 걸 수 있지만
+  <p><a href="링크"target="_blank">내용</a></p>을 사용하면 새 탭에서 열 수 있다
+
+  그 밑에 링크 위에 마우스를 올리면 나오는 툴팁을 추가하고 싶다면
+  target="_blank" 의 뒤에 title="툴팁 내용"을 쓰면 된다
+      </xmp>
+      #13~15 웹사이트 완성<br>
+      계획
+      <img src="Web plan.PNG" title="웹사이트 계획"><br><br>
+      개념정리에 쓰기엔 지저분해질 것 같아서
+      <p><a href="home.html"
+      target="_blank" title="계획하는 웹사이트">웹사이트로 이동</a></p>
+      <br>
+      #16,17 원시웹, 서버와 클라이언트 <br><br>
+      Internet VS WEB <br>
+      Internet의 안에 Web을 비롯한 수많은 서비스들이 존재한다 <br><br>
+      <strong>Web의 역사</strong> <br><br>
+      인터넷이 처음 개발된 1960대에는 '핵'이 중요한 이슈였고 강력한 통신 장치가 필요해 인터넷이 만들어지게 되었다
+      <br>인터넷은 수많은 점들이 연결된 중앙이 없는 모양이다. 점들 중 하나가 사라져도 나머지 점들이 일을 수행해낸다 <br>
+      그 후 1990년도에 스위스에 있는 물리학 연구소에 인터넷이 들어오면서 '웹'이 등장하게 되었다.
+      그 후 대중화의 길을 걷게 되었고 그 후 급속도로 성장하게 된다 <br>
+      초기에는 두 프로그램이 개발되었다. Web Browser 와 Web Server이다. <br>
+      W.S(Web Server) 안에는 index.html이라는 파일이 저장되어 있다. <br>
+      W.B(Web Browser) 에서 info.cern.ch/index.html을 입력하면 W.B가 설치되어있는 컴퓨터에서는
+      인터넷을 통해 info.cern.ch에 해당되는 컴퓨터에 전기적인 신호를 보낸다. <br> 그 신호 안에는 index.html 파일을 원한다 라는 내용이 있다.<br>
+       그러면 info.cern.ch에 해당되는 컴퓨터에 설치된 웹서버라는 프로그램이 하드디스크에서 index.html이라는 파일을 찾아서
+        W.B가 설치되어있는 컴퓨터에 다시 신호를 보낸다.<br> 그 신호 안에는 index.html 안에 있는 코드가 있다. 그 후 W.B가 코드를
+         해석해 화면에 표시하면 우리가 알고 있는 웹이 된다.
+         <img src="web c,s.PNG">
+         <br> #18 웹 호스팅 : github page(2022)<br><br>
+      web server VS web hosting <br>
+      W.s는 자신의 컴퓨터에 웹 서버를 깔아 하는것이고 <br>
+      W.h는 대행업체에 맡겨 홍보하는 것이다 <br>
+</body>
+</html>
